@@ -1,0 +1,162 @@
+*{
+    border:0;
+    padding: 0;
+}
+.login-header{
+    background: #fff;
+    width: 1000px;
+    height: 128px;
+    margin: 0 auto;
+}
+.login-box{
+    height: 500px;
+    padding-top: 70px;
+    background:url(../img/login_bottom.png) no-repeat;
+    background-position-x: left ;
+    background-position-y: bottom;
+    background-color: #f5f5f5;
+}
+.login-middle{
+    margin: 0 auto;
+    width: 1000px;
+    background:url(../img/loginLeft.png) no-repeat;
+    background-position: 20px 60px;
+    background-size: 490px 314px ;
+}
+.login{
+    margin-left: 600px;
+    background: #FFFFFF;
+    width: 320px;
+    height: 372px;
+    border-top:4px solid #ff9900 ;
+    border-left: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    border-right:1px solid #d7d7d7 ;
+    padding: 20px 40px 0;
+    position: relative;
+}
+.login .login-tt{
+    font-size: 14px;
+    color: #ff9900;
+    margin-bottom:25px ;
+    font-weight:normal;
+}
+.phone-in{
+    position: relative;
+    margin: 0 auto;
+}
+.phone-in input{
+    border: 1px solid #b0b0b0;
+    width: 262px;
+    height: 38px;
+    background: url(../img/mobile.png) no-repeat;
+    background-position: 15px center;
+    background-size:auto 25px;
+    line-height: 38px;
+    padding-left: 57px;
+}
+.prompt{
+    font-size: 14px;
+    color: red;
+    left: 39px;
+    top: 40px;
+    position: absolute;
+    display: none
+}
+.imgcode{
+    margin-top: 18px;
+    position: relative;
+
+}
+.imgcode input{
+    border: 1px solid #b0b0b0;
+    width: 162px;
+    height: 38px;
+    padding-left: 57px;
+    background: url(../img/imgcode.png) no-repeat;
+    background-size: auto 26px;
+    background-position:12px center;
+    line-height:38px ;
+    display: block;
+    float: left;
+}
+.imgcode img{
+    width: 90px;
+    height: 40px;
+    margin-left: 4px;
+}
+
+.passwd{
+    margin-top: 18px;
+    position: relative;
+}
+.passwd input{
+    border: 1px solid #b0b0b0;
+    width: 162px;
+    height: 38px;
+    padding-left: 56px;
+    background: url(../img/psd.png) no-repeat;
+    background-size: auto 26px;
+    background-position:13px center;
+    line-height:39px ;
+    display: block;
+    float: left;
+}
+.passwd button{
+    width: 90px;
+    height: 40px;
+    background-color: #e6e6e6;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn{
+    margin-top: 54px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.btn input{
+    width: 100%;
+    height: 40px;
+    background-color: #ff9900;
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;;
+}
+.tip{
+    font-size: 12px;
+    color: #808080;
+    line-height: 18px;
+}
+.tip a{
+    text-decoration: none;
+}
+.login_bottom{
+    background: #FFFFFF;
+    height: 78px;
+}
+.copyright{
+    height: 78px;
+    margin: 0 auto;
+    margin: 20px 0 20px;
+}
+.copyright p{
+    font-size: 12px;
+    line-height:26px;
+    text-align: center;
+    color: #808080;
+    margin: 0;
+}
+.copyright a{
+    color: #808080;
+    text-decoration: none;
+}
+.box-shadow{
+    position: absolute;
+    left: 50%;
+    bottom: -18px;
+    margin-left: -162px;
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>登录</title>
+</head>
+<body>
+   <div  class="login-header">
+       <a href="#">
+           <img src="img/loginlogo2.png" alt="">
+       </a>
+   </div>
+   <div class="login-box">
+       <div class="login-middle">
+       <div class="login">
+           <p class="login-tt">用户登录</p>
+           <div class="phone-in">
+           <input type="text" placeholder="请输入手机号码">
+               <span class="prompt">*请填写手机号码</span>
+           </div>
+           <div class="imgcode">
+           <input type="text" placeholder="请输入图形验证码">
+               <img src="img/yan.jpg" alt="" >
+               <span class="prompt">*请填写验证码</span>
+           </div>
+           <div class="passwd">
+           <input type="text" placeholder="请输入短信验证码">
+               <button class="btn-h">获取验证码</button>
+               <span class="prompt">*请填写短信验证码</span>
+           </div>
+           <div class="btn">
+               <input type="button" value="登录" id="">
+           </div>
+
+           <p class="tip">未注册家策好服务的手机号,登录时将自动注册并视为同意 <a href="#">《用户使用协议》</a></p>
+           <div class="box-shadow">
+               <img src="img/boxshadow.png" alt="">
+           </div>
+       </div>
+       </div>
+   </div>
+   <div class="login_bottom">
+        <div class="copyright">
+            <p>上海家策信息科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;上海市徐汇区中山西路2368号华鼎大厦19楼A</p>
+            <p>
+                © 2016-2018 家策好服务&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.miitbeian.gov.cn" target="_blank">沪ICP备16022947号</a>
+            </p>
+        </div>
+   </div>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/login.js"></script>
+<script>
+
+    //获取图片验证码
+    // var publicPath="http://"+window.location.host+"/fbeeWebConsole_web";
+    // function getCaptcha(){
+    //     $.ajax({
+    //         url: publicPath+"/ttjz/api/member/getCaptcha",
+    //         type: "post",
+    //         data: {},
+    //         dataType: "json",
+    //         success: function success(data) {
+    //             if(data.success) {
+    //                 if(data.code==0){
+    //                     var img = "data:image/jpeg;base64," + data.jsonData.captcha;
+    //                     $("#captcha").attr("src", img);
+    //                 }
+
+    //             } else {
+    //                 console.log(data.msg);
+    //             }
+    //         },
+    //         error: function(err) {
+    //             console.log(err);
+    //         }
+    //     });
+    // }
+
+    // //重发短信按钮
+    // var countdown = 60;
+    // function settime() {
+    //     if(countdown == 0) {
+    //         $("#mesCapt").removeAttr("disabled");
+    //         $("#mesCapt").html("获取验证码");
+    //         countdown = 60;
+    //         return;
+    //     } else {
+    //         $("#mesCapt").attr("disabled","disabled");
+    //         $("#mesCapt").html("重新发送(" + countdown + ")");
+    //         countdown--;
+    //     }
+    //     setTimeout(function() {
+    //         settime()
+    //     }, 1000)
+    // }
+    // //开始加载
+    // $(function(){
+    //     getCaptcha();
+    //     $("#captcha").click(function(){
+    //         getCaptcha();
+    //     })
+    //     $("#mesCapt").click(function() {
+    //         if($("#phone").val()==""||$("#phone").val()==null){
+    //             $("#phone").trigger("blur");
+    //         }else{
+    //             $.ajax({
+    //                 url: publicPath+"/ttjz/api/member/sendSms",
+    //                 type: "post",
+    //                 data: {
+    //                     mobile:$("#phone").val(),
+    //                     captcha:$("#imgCode").val()
+
+    //                 },
+    //                 dataType: "json",
+    //                 success: function success(data) {
+    //                     if(data.success) {
+    //                         if(data.code==0){
+    //                             settime();
+    //                             // alert("短信发送成功");
+    //                             // alert(data.jsonData);
+    //                         }
+
+    //                     } else{
+    //                         if(data.code==100005){
+    //                             self=$("#imgCode");
+    //                             onError("*"+data.msg,self);
+    //                         }else if(data.code==100013){
+    //                             self=$("#message");
+    //                             onError("*"+data.msg,self);
+    //                         }
+
+    //                         getCaptcha();
+    //                     }
+    //                 },
+    //                 error: function(err) {
+    //                     console.log(err);
+    //                 }
+    //             });
+    //         }
+    //     })
+    // })
+    // function onError(msg,self) {
+    //     if(self.nextAll().hasClass('prompt')){
+    //         self.nextAll('.prompt').text(msg);
+    //         return;
+    //     }
+    //     self.parent().append("<span class='prompt'>"+msg+"</span>");
+    // }
+
+    // function onSuccess(self) {
+    //     self.nextAll('.prompt').remove();
+    // }
+    // // 提交验证
+    // $("body").keydown(function(event){
+    //     if (event.keyCode == "13") {
+    //         $("#login_bt").trigger("click");
+    //     }
+    // });
+    // $("#login_bt").click(function(){
+    //     $(".login div input").trigger("blur");
+    //     if ($(".prompt").length>0) {
+    //         return;
+    //     };
+    //     //登录提交
+    //     $.ajax({
+    //         url: publicPath+"/ttjz/api/member/login",
+    //         type: "post",
+    //         data: {
+    //             mobile:$("#phone").val(),
+    //             code:$("#message").val(),
+    //             captcha:$("#imgCode").val()
+    //         },
+    //         dataType: "json",
+    //         success: function success(data) {
+    //             if(data.success) {
+    //                 if(data.code==0){
+    //                     if(data.jsonData.pcToken){
+    //                         setTokenCookie(data.jsonData.pcToken);
+    //                     }
+    //                     var prevLink = document.referrer;
+    //                     if($.trim(prevLink)==''){
+    //                         location.href = 'jiacerIndex.html';
+    //                     }else{
+    //                         if(prevLink.indexOf('139.224.49.192')==-1){    //来自其它站点
+    //                             location.href = 'jiacerIndex.html';
+    //                         }
+    //                         if(prevLink.indexOf('login.html')!=-1){      //来自注册页面
+    //                             location.href = 'jiacerIndex.html';
+    //                         }
+    //                         location.href = prevLink;
+    //                     }
+    //                     //location.href="jiacerIndex.html";
+    //                     console.log(data.msg);
+    //                 }
+    //             }else{
+    //                 if(data.code==100012){
+    //                     self=$("#message");
+    //                     onError("*"+data.msg,self);
+    //                 }
+    //             }
+    //         },
+    //         error: function(err) {
+    //             console.log(err);
+    //         }
+    //     });
+    // });
+
+    // // 表单验证
+    // var regExp=/^((\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$)$/;	//手机号码
+    // var regNum= /^[0-9]*$/;
+    // var regCode= /^[A-Za-z0-9]+$/;
+    // $(".login div input").blur(function(){
+    //     var self = $(this);
+    //     var name = $(this).attr("name");
+    //     switch (name){
+    //         case "phone":
+    //             if (self.val()=="") {
+    //                 onError('*请填写手机号码',self);
+    //             } else if(!regExp.test(self.val())){
+    //                 onError('*请填写正确的手机号码',self);
+    //             }else{
+    //                 onSuccess(self);
+    //             }
+    //             break;
+    //         case "imgCode":
+    //             if (self.val() == "") {
+    //                 onError('*请填图片验证码',self);
+    //             } else if(!regCode.test(self.val())){
+    //                 onError('*验证码不正确',self);
+    //             }else {
+    //                 onSuccess(self);
+    //             }
+    //             break;
+    //         case "message":
+    //             if (self.val() == "") {
+    //                 onError('*请填写短信验证码',self);
+    //             } else if(!regNum.test(self.val())){
+    //                 onError('*验证码不正确',self);
+    //             }else{
+    //                 onSuccess(self);
+    //             }
+    //             break;
+    //         default:
+    //             break;
+    //     }
+    // });
+
+</script>
+</html>

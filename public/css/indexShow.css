@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main {
+    cursor: pointer;
+}
+#qrcode img {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -130px;
+    text-align: center;
+    width: 268px;
+    height: 268px;
+    display: block;
+}
+#qrcode {
+    position: fixed;
+    top: 0;
+    left: 70px;
+    width: 382px;
+    height: 412px;
+    text-align: center;
+    margin: auto;
+    z-index: 998;
+    background-color:#fff;
+    display: none;
+    margin-left: 550px;
+    margin-top: 200px;
+    border-radius: 5px;
+}
+.wechatbg{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    opacity: .6;
+    display: none;
+}
+.wechat_w{
+    margin-top: 300px;
+    font-size:16px;
+    color:#4c4c4c;
+}
+.wechat_s{
+    font-size: 14px;
+    margin-top: 18px;
+    color: #888;
+}
+.text_no a{
+    text-decoration: none;
+}
+.side-menu a{
+    text-decoration: none;
+}
+.index_text a{
+    text-decoration: none;
+    color: #333;
+}
+.index_text p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+}
+.footer_x{
+    width: 100%;
+    background-color:#2c2c2c;
+    padding:25px 0 ;
+}
+.footer_x p{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 18px;
+}
+.footer_x a{
+    color: #fff;
+    text-decoration: none;
+}
+.header-warp a{
+    text-decoration: none;
+}
+.school_info{
+    width:1176px ;
+    height: 250px;
+}
+.school_in{
+    width: 350px;
+    height: 250px;
+    display: inline-block;
+    background-color: #f6f6f6;
+    margin-left: 24px;
+    float: left;
+    border-radius: 2px;
+}
+.school_inf{
+    border-bottom: 2px solid #f1f1f1;
+    width: 330px;
+    height: 145px;
+}
+.school_inf1 img{
+    width: 84px;
+    height: 84px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.school_inf2{
+    width: 200px;
+    height: 93px;
+    float: left;
+    padding-top: 40px;
+    margin-left:20px ;
+}
+.school_inf2 img{
+  margin-top: -10px;
+}
+.school_inf2 p{
+    font-size: 20px;
+    color: #333;
+}
+.text_in{
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+    overflow-x: hidden;
+    text-overflow:ellipsis;
+    white-space: normal;
+    line-height: 1.5;
+    max-height: 45px;
+}
+.school_info a{
+     text-decoration: none;
+ }
+

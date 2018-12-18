@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.school-list{
+    display: block;
+    width: 254px;
+    height: 197px;
+    font-size: 0;
+}
+.courses-info{
+    overflow: hidden;
+    position: relative;
+}

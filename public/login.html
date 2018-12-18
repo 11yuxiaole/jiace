@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>登录</title>
+</head>
+<body>
+   <div  class="login-header">
+       <a href="#">
+           <img src="img/loginlogo2.png" alt="">
+       </a>
+   </div>
+   <div class="login-box">
+       <div class="login-middle">
+       <div class="login">
+           <p class="login-tt">用户登录</p>
+           <div class="phone-in">
+           <input type="text" placeholder="请输入手机号码" id="phone" name="phone" value="11111111111" class="phone">
+               <span class="prompt" id="fu">*请填写手机号码</span>
+           </div>
+           <div class="imgcode">
+           <input type="text" placeholder="请输入图形验证码" id="yan" name="acode" value="1235" class="acode">
+               <img src="img/yan.jpg" alt="" >
+               <span class="prompt" id="yan_one">*请填写验证码</span>
+           </div>
+           <div class="passwd">
+           <input type="text" placeholder="请输入短信验证码" id="yan_du" name="dcode" value="43611" class="dcode">
+               <button class="btn-h">获取验证码</button>
+               <span class="prompt" id="yan_xin">*请填写短信验证码</span>
+           </div>
+           <div class="btn">
+               <input type="button" value="登录" class="login1">
+           </div>
+
+           <p class="tip">未注册家策好服务的手机号,登录时将自动注册并视为同意 <a href="#">《用户使用协议》</a></p>
+           <div class="box-shadow">
+               <img src="img/boxshadow.png" alt="">
+           </div>
+       </div>
+       </div>
+   </div>
+   <div class="login_bottom">
+        <div class="copyright">
+            <p>上海家策信息科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;上海市徐汇区中山西路2368号华鼎大厦19楼A</p>
+            <p>
+                © 2016-2018 家策好服务&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.miitbeian.gov.cn" target="_blank">沪ICP备16022947号</a>
+            </p>
+        </div>
+   </div>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/login.js"></script>
+</html>
